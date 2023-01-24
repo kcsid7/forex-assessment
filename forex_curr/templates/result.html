@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block title %}Forex Converter Result{% endblock %}
+
+{% block content%}
+<div class="convert-text">
+    <h3>Converted From {{curr_from.name}}:</h3>
+    <h4>{{curr_from.symbol}} <span class="amt-from">{{curr_from.amount}}</span></h4>
+    <h3>Converted To {{curr_to.name}}:</h3>
+    <h4>{{curr_to.symbol}} <span class="amt-to">{{curr_to.new_amount}}</span></h4>
+</div>
+
+<h3><a href="/">Back to Home</a></h3>
+{% endblock %}

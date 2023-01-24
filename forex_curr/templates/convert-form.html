@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+{% block title %}Forex Converter Form{% endblock %}
+
+{% block content%}
+<div>
+    <form action="/convert" method="POST" >
+        <label for="curr_from">Currency From</label>
+        <input type="text" name="curr_from">
+        <label for="curr_to">Currency To</label>
+        <input type="text" name="curr_to">
+        <label for="amount">Amount</label>
+        <input type="text" name="amount">
+        <button>Convert</button>
+    </form>
+</div>
+{% endblock %}
